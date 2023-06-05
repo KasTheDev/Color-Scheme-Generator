@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <input type="color" id="color-input" class="color-input" />
+            <select name="color-mode-select" id="color-mode-select" class="color-mode-select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-Dark</option>
+                <option value="monochrome-light">Monochrome-Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button id="color-scheme-btn" class="color-scheme-btn"> Get Color Scheme </button>
+        </header>
+        <div class= "color-container" id="color-container">
+            <div style="background-color:#F55A5A;" id = "" class = "color"></div>
+            <div style="background-color:#2B283A;" id = "" class = "color"></div>
+            <div style="background-color:#FBF3AB;" id = "" class = "color"></div>
+            <div style="background-color:#AAD1B6;" id = "" class = "color"></div>
+            <div style="background-color:#A626D3;" id = "" class = "color"></div>
+        </div>
+        <div class="hex-container" id="hex-container">
+            <p> #F55A5A </p>
+            <p> #2B283A </p>
+            <p> #FBF3AB </p>
+            <p> #AAD1B6 </p>
+            <p> #A626D3 </p>
+        </div>    
+        <script src="index.js"></script>
+    </body>
+</html>
