@@ -7,40 +7,51 @@ html, body {
 }
 
 header{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1.5em 1em;
     gap: 12px;
 }
 
+header,
+.color-container,
+.hex-container{
+    display: flex;
+}
+
 .color-input{
     width: 3.8rem;
     height: 2.6rem;
-    border: none;
 }
 
 .color-mode-select{
     width: 60%;
     height: 2.6rem;
-    padding-top: .6em;
-    padding-bottom: .6em;
-    padding-left: .8em;
+    padding: .6em 0 .6em .8em;
     color: #111827;
-    border-radius: 6px;
+    border-radius: .3em;
 }
 
 .color-scheme-btn{
     font-size: .75rem;
     width: 25%;
     height: 42px;
-    border-radius: 4px;
+    border-radius: .25em;
 }
 
 .color-mode-select,
-.color-scheme-btn{
+.color-scheme-btn,
+.color-input{
     border: 1px solid #D1D5DB;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.color-mode-select,
+.color-scheme-btn,
+.color-input,
+.color-container,
+p{
+    cursor: pointer;
 }
 
 .color{
@@ -48,17 +59,30 @@ header{
     height: 30rem;
 }
 
-.color-container{
-    display: flex;
-}
-
 .hex-container{
-    display: flex;
     justify-content: space-around;
-    padding-top: .7em;
-    padding-bottom: .7em;
 }
 
 p{
+    margin: 0;
     font-size: .75rem;
+    padding: 1em 0;
+}
+
+.copied {
+    margin: 0 auto;
+    display: none;
+    width: 200px;
+    position: fixed;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    font-size: 0.75rem;
+    padding: .6em;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 0 .25em black;
+    transition: opacity 0.5s linear;
 }
